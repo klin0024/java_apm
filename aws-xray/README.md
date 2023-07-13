@@ -45,6 +45,7 @@ export OTEL_TRACES_SAMPLER=always_on
 export OTEL_TRACES_EXPORTER=otlp
 export OTEL_METRICS_EXPORTER=none
 export OTEL_EXPORTER_OTLP_ENDPOINT=http://< AWS OTEL Collector IP >:4317
+export JAVA_OPTS="-javaagent:aws-opentelemetry-agent.jar"
 ```
 
 4. 執行 JAVA 應用程式
