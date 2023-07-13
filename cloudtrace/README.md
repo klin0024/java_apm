@@ -22,6 +22,6 @@ export JAVA_OPTS="-javaagent:opentelemetry-javaagent.jar -Dotel.javaagent.extens
 4. 執行 JAVA 應用程式
 
 ```
-java $JAVA_OPTS -jar app.jar
+java $JAVA_OPTS -jar < JAR File >
 ```
 
