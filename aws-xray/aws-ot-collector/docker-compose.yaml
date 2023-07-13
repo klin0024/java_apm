@@ -1,6 +1,8 @@
 version: "2"
 services:
   aws-ot-collector:
+    container_name: aws-ot-collector
+    hostname: aws-ot-collector
     image: public.ecr.aws/aws-observability/aws-otel-collector:latest
     command: 
       - --config=/etc/otel-config.yaml
