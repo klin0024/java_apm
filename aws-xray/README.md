@@ -1,6 +1,6 @@
 # AWS X-Ray for JAVA
 
-1. 建立 User `xray` 並賦予IAM Policy `AWSXRayDaemonWriteAccess`
+1. 建立 User `aws-ot-collector` 並賦予 IAM Policy `AWSXRayDaemonWriteAccess`
 
 2. 拉取 Source Code
 
@@ -30,7 +30,7 @@ environment:
     AWS_SECRET_ACCESS_KEY: < AWS SECRET ACCESS KEY >
 ```
 
-4. 建立 AWS OTEL Collector
+4. 啟動 AWS OTEL Collector
 
 ```
 docker-compose up -d
